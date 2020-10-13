@@ -8,25 +8,25 @@ namespace Assignment_5.Models
     public class Operations
     {
         private int userInput;
-        public void getUsetInput(int UserInput)         // Public Method to assign user input
+        public void getUserInput(int UserInput)         // Assign user input to public get method
         {
             userInput = UserInput;
         }
-        public long Factorial()                         // Method to calculate factorial. Taking long instead of int to calculate factorial of large values
+        public int Factorial()                         // Method to calculate factorial with no parameters, returns int
         {
-            long result = userInput;
-            for (int i = 1; i < userInput; i++)         // Loop to calculate factorial.
+            int result = userInput;
+            for (int i = 1; i < userInput; i++)         // Loop to calculate the factorial (int * int * int...)
             {
-                result = result * i;                    // Updating result value every time. e.g. 5! = 5 * 4 * 3 * 2 * 1
+                result = result * i;                    // Iterate up to the value of userInput one integer at a time
             }
             return result;
         }
-        public int Sum()                                // Method to calculate Sum
+        public int Sum()                                // Method to calculate sum with no parameters, returns int
         {
-            int result = 0;
-            for (int i = 1; i <= userInput; i++)        // Loop to calculate Sum.
+            int result = 0;                             
+            for (int i = 1; i <= userInput; i++)        // For loop to calculate the Sum (int + int + int...)
             {
-                result = result + i;                    // Updating result value every time. e.g. 5! = 5 * 4 * 3 * 2 * 1
+                result = result + i;                    // Iterate up to the value of userInput one integer at a time
             }
             return result;
         }

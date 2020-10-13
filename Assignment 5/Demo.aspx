@@ -7,17 +7,16 @@
    <body>
       <form id="form1" runat="server">
          <div>
-            <asp:TextBox runat="server" ID="inputTxt"></asp:TextBox>
-            <br />
-            <br />
-            <asp:Button ID="factorial" Text="Calculate Factorial!" OnClick="factorial_Click" runat="server" />
-            <br />
-            <br />
-            <asp:Button ID="sum" Text="Calculate Sum!" OnClick="sum_Click" runat="server"/>
-            <br />
-            <br />
-            <label>Result is:</label>
-            <asp:Label ID="result" Text="" style="font-size:16px;font-weight:bold;color:red" runat="server"></asp:Label>
+            <center>
+               <asp:TextBox runat="server" ID="inputTxt"></asp:TextBox>
+               <br /><br />
+               <asp:Button ID="factorial" Text="Calculate Factorial!" OnClick="factorial_Click" runat="server" />
+               <br /><br />
+               <asp:Button ID="sum" Text="Calculate Sum!" OnClick="sum_Click" runat="server"/>
+               <br /><br />
+               <label>Result:&nbsp;</label>
+               <asp:Label ID="result" Text="" style="font-size:18px;color:blue;font-weight:bold" runat="server"></asp:Label>
+            </center>
          </div>
       </form>
    </body>
